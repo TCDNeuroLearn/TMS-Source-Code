@@ -58,9 +58,18 @@ function teaching_app_3_1_OpeningFcn(hObject, eventdata, handles, varargin)
 handles.output = hObject;
 clc;
 
+ss=get(0,'screensize');         
+w=ss(3);                %Screen width and height
+h=ss(4);
+
+
+
 p=get(handles.figure1,'Position');
 width=p(3);
 height=p(4);
+
+set(handles.figure1,'Position',[w*1/8,h*2/16,width,height]);
+
 
 %Load in plotting data for each subject
 load('data.mat');
