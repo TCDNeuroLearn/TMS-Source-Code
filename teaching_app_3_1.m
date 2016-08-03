@@ -63,7 +63,6 @@ w=ss(3);                %Screen width and height
 h=ss(4);
 
 
-
 p=get(handles.figure1,'Position');
 width=p(3);
 height=p(4);
